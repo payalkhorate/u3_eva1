@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+#menu{
+    width:100%;
+    height:60px;
+    background-color: rgb(49, 49, 94);
+    color:white;
+    margin: auto;
+    text-align: center;
+}
+#Show_Products{
+    color:white;
+    height:40px;
+    width:200px;
+    background-color: palevioletred;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    border: white;
+}
+#pro {
+    width: 300px;
+    border: 1px solid rgb(241, 219, 219);
+    margin: 3% auto;
+    padding: 3%;
+    background: rgb(241, 239, 239);
+    border-radius: 5px;
+  }
+  #pro>h2{
+      margin-top: -10px;
+      font-family:Arial, Helvetica, sans-serif;
+  }
+  #pro>h2>a{
+      text-decoration: none;
+  }
+#product_form{
+      margin: auto;
+      text-align: center;
+  }
+#product_form>input{
+    margin-top: 20px;
+    width:250px; 
+}
+#add_Product{
+    height:30px;
+    border-radius: 5px;
+    color:black;
+    background-color: rgb(174, 107, 237);
+    border: white;
+    font-size: 15px;
+}
+#add_Product:hover{
+    color:rgb(255, 255, 255);
+    background-color: rgb(225, 140, 140);
+}
+
+    </style>
+  </head>
+
+  <body>
+    <div id="menu">
+      <button id="Show_Products">
+        <a href="./inventory.html">Show Products</a>
+      </button>
+      
+      <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+    </div>
+    <div id="pro">
+      <h2>Add Products</h2>
+      <!--Create a form here to accept product data from user, give form HTML id as "product_form"-->
+
+      <!--Create four inputs to accept brand, name, price, image and brand-->
+      <!--give the inputs following respective id's, "product_brand", "product_name", "product_price","product_image"-->
+      <!--create a submit option to submit form, give it html id as "submit"-->
+      <form id="product_form" onsubmit="storeData(event )">
+        <input type="text" id="product_brand" placeholder="enter product brand">
+        <input type="text" id="product_name" placeholder="enter product name">
+        <input type="number" id="product_price" placeholder="enter product price">
+        <input type="text" id="product_image" placeholder="Image"><br/>
+        <input type="submit" id="add_Product">
+      </form>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>
